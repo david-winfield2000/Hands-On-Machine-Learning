@@ -11,7 +11,9 @@ Data mining = digging into data to discover hidden patterns
 - Fluctuating environments
 - Gaining insights on complex problems and large datasets
 
-## Types of learning
+## Types of machine learning systems
+
+### Training supervision
 
 - Supervised = training set is labeled
 - Unsupervised = training set is unlabeled
@@ -19,7 +21,7 @@ Data mining = digging into data to discover hidden patterns
 - Self-supervised = generating a fully labeled training set from a fully unlabeled one
 - Reinforcement = an agent observes and interacts with environment, and using rewards/penalties, learns which policies earn the highest reward over time
 
-## Batch vs online learning
+### Batch vs online learning
 
 Batch learning = can only be trained from scratch on the full dataset
 
@@ -31,4 +33,4 @@ Online learning = can be trained in multiple batches
 - Can set learning rate to determine how reactive the model is to new data points vs forgetting older ones
 - Susceptible to performance drops if fed bad data over a period of time, difficult to resolve
 
-## Instance-based vs model-based learning
+### Instance-based vs model-based learning
