@@ -7,9 +7,9 @@ Machine learning = science (and art) of programming computers to learn from data
 Data mining = digging into data to discover hidden patterns
 
 - Problems where existing solutions require lots of work
-- Complex problems where traditional approaches don't give any good solutions
+- Complex problems where traditional approaches don't provide any good solutions
 - Fluctuating environments
-- Getting insights on complex problems and large datasets
+- Gaining insights on complex problems and large datasets
 
 ## Types of learning
 
