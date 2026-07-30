@@ -71,3 +71,17 @@ Nonproliferation of classes: datasets are NumPy arrays or SciPy sparse matrices.
 Composition: Existing building blocks are reused as much as possible. Can create `Pipeline` estimator from arbitrary sequence of transformers followed by final estimator
 
 Sensible defaults: sklearn provides reasonable default values for most parameters, making it easy to quickly create baseline working system
+
+---
+
+Handling text and categorical features:
+
+- Convert the categorical attributes into numbers
+- Sklearn's `OrdinalEncoder` class
+- One-hot encoding = one attribute == 1 (hot), others == 0 (cold)
+
+Sparse matrix = efficient scipy representation for matrices that contain mostly zeros (stores nonzero values and positions)
+
+Pandas `get_dummies()` = converts categorical feature into one-hot representation, one binary feature per category
+
+- But `OneHotEncoder` is better, since it remembers categories it was trained on
