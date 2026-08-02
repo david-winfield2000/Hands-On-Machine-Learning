@@ -19,9 +19,13 @@ Table showing True/False Positives/Negatives for predictions
 
 Precision = TP / (TP + FP)
 
+- When the model predicts positive, how often is it right?
+
 Kind of a useless metric on its own, since it's based on the predictions the classifier actually makes. If it only makes 1 guess, and it gets it right, it's 100% precise. But that's not useful unless paired with recall
 
 Recall = TP / (TP + FN)
+
+- Of all the actual positives, how many did the model find?
 
 F1 score = harmonic mean of precision and recall
 
