@@ -77,3 +77,15 @@ When to use ROC curve vs PR (precision/recall) curve:
 
 - Use PR when positive class is rare or we care more about false positives than false negatives
 - Otherwise, use ROC curve
+
+## Multiclass classification
+
+Multiclass classifiers can distinguish between more than 2 classes
+
+Some sklearn classifiers cannot handle multiple classes natively
+
+- One-versus-the-rest (OvR) strategy = train multiple binary classifiers, and assume the class of the classifier that outputs the highest score
+- One-versus-one (OvO) strategy = train a binary classifier for every pair of classes, need N x (N - 1) / 2 classifiers
+  - Each classifier only needs to be trained on the part of the training set containing the 2 classes it must distinguish
+
+Sklearn detects when you try to use a binaryu classification algorithm for a multiclass classification task, and automatically runs OvR or OvO
