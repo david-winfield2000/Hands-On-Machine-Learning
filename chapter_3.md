@@ -51,3 +51,29 @@ Easier way to adjust decision threshold:
 
 - `FixedThresholdClassifier` = set desired threshold manually
 - `TunedThresholdClassifierCV` = uses k-fold cv to find optimal threshold for a given metric, maximizing balanced accuracy (average of recall)
+
+### The ROC curve
+
+ROC (receiver operating characteristic) = tool for binary classifiers, plots true positive rate against false positive rate
+
+TPR (true positive rate)
+
+FPR (false positive rate) = 1 - TNR
+
+TNR (true negative rate) = specificity
+
+ROC plots sensitivity/recall vs 1 - specificity
+
+Tradeoff:
+
+- Higher recall (TPR), the more false positives (FPR) the classifier produces
+
+To compare classifiers, measure area under the curve (AUC)
+
+- Perfect clasifier will have ROC AUC == 1
+- Random classifier will have ROC AUC == 0.5
+
+When to use ROC curve vs PR (precision/recall) curve:
+
+- Use PR when positive class is rare or we care more about false positives than false negatives
+- Otherwise, use ROC curve
