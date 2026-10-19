@@ -12,6 +12,8 @@
 
 **Machine learning** = A field of computer science in which a program learns patterns from data instead of following rules written by hand. The learned pattern is then used to make predictions or decisions on new data.
 
+**Hyperparameter** = A setting chosen before training that controls how the learning process works, such as the learning rate or the amount of regularization, rather than a value the model learns from the data. Good values are usually found by comparing models on a validation set.
+
 ## Data Sets
 
 **Training set** = The data a model learns from.
