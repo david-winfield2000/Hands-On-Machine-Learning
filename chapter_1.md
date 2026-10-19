@@ -98,7 +98,7 @@ Hyperparameter tuning and model selection
 Holdout validation = multiple sets of data with retraining
 
 1. Train on training set
-2. Evaluate against dev set, retrain
+2. Evaluate against validation set, retrain
 3. Evaluate final model against test set
 
 Cross-validation = using many validation sets
