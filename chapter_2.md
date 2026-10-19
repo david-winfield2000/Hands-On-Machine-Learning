@@ -107,7 +107,7 @@ You can create custom transformers, and scikit-learn provides `check_estimator()
 
 ### Transformation pipelines
 
-`Pipeline` clas helps with sequences of transformations
+`Pipeline` class helps with sequences of transformations
 
 - Contains `fit_transform()` and `predict()`
 
