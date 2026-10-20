@@ -89,3 +89,20 @@ Some sklearn classifiers cannot handle multiple classes natively
   - Each classifier only needs to be trained on the part of the training set containing the 2 classes it must distinguish
 
 Sklearn detects when you try to use a binaryu classification algorithm for a multiclass classification task, and automatically runs OvR or OvO
+
+## Error analysis
+
+Common tools:
+
+- Confusion matrix
+- F1 and macro F1 scores
+
+## Multilabel classification
+
+Some models work with multilabel classification, like K-NN
+
+You can also use sklearn's ClassifierChain to organize models in a chain, so after a model makes a prediction, it uses the inpuut features plus all the predictions of the prior models that come beofre it in the chain to make a prediction
+
+## Multioutput classification
+
+Generalization of multilabel classification, each label caan be multiclass
